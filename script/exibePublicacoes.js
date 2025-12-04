@@ -8,7 +8,7 @@ function exibirHome(){
         }
         
         document.getElementById("publicacoes").innerHTML += `
-        <a href="http://127.0.0.1:5500/texto.html?id=${encodeURIComponent(i)}" class="card">
+        <a href="/texto.html?id=${encodeURIComponent(i)}" class="card">
             <div>
             <img src="${publicacao.banner}" alt="">
             <b>${publicacao.titulo}</b>
@@ -32,7 +32,7 @@ function exibirTudo(){
         }
         
         document.getElementById("publicacoes").innerHTML += `
-        <a href="http://127.0.0.1:5500/texto.html?id=${encodeURIComponent(i)}" class="card">
+        <a href="/texto.html?id=${encodeURIComponent(i)}" class="card">
             <div>
             <img src="${publicacao.banner}" alt="">
             <b>${publicacao.titulo}</b>
@@ -56,7 +56,7 @@ function exibirNoArtigo(){
         }
         
         document.getElementById("publicacoes").innerHTML += `
-        <a href="http://127.0.0.1:5500/texto.html?id=${encodeURIComponent(i)}" class="card">
+        <a href="/texto.html?id=${encodeURIComponent(i)}" class="card">
             <div>
             <img src="${publicacao.banner}" alt="">
             <b>${publicacao.titulo}</b>
@@ -68,4 +68,5 @@ function exibirNoArtigo(){
 
         console.log("concluído " + i);
     }
+
 }
