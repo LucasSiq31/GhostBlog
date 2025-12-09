@@ -477,4 +477,14 @@ footer .links a{
     header h1{
         font-size: large;
     }
+
+}
+
+@media print{
+    .iconMenu{
+        opacity: 0;
+    }
+    .share, h2, .publicacoes, footer{
+        display: none;
+    }
 }
